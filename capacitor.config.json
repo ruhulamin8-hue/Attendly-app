@@ -1,0 +1,8 @@
+{
+  "appId": "com.attendly.app",
+  "appName": "Attendly",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  }
+}

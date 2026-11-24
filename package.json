@@ -1,0 +1,18 @@
+{
+  "name": "attendly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Attendance app: mark attendance, import students from Excel, view percentages.",
+  "scripts": {
+    "vendor": "node -e \"require('fs').mkdirSync('www/vendor',{recursive:true});require('fs').copyFileSync('node_modules/xlsx/dist/xlsx.full.min.js','www/vendor/xlsx.full.min.js')\"",
+    "sync": "npm run vendor && cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
